@@ -9,7 +9,7 @@ def main():
 
     st.header("Paramètres de revente")
 
-    PR = st.number_input("Prix de revente espéré (PR) en €", min_value=0.0, value=500.0, step=10.0)
+    PR = st.number_input("Prix de revente espéré (PR) en €", min_value=0, value=500, step=10)
 
     site_fee_percent = st.number_input("Frais de plateforme de revente (%)", min_value=0.0, max_value=100.0, value=10.0, step=0.5)
     house_fee_percent = st.number_input("Frais maison de vente (%)", min_value=0.0, max_value=100.0, value=20.0, step=0.5)
