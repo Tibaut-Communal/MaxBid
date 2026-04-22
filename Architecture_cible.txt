@@ -1,0 +1,44 @@
+auction-arbitrage/
+│
+├── app/
+│   ├── config/
+│   │   └── settings.py
+│   │
+│   ├── collectors/              # récupération des données
+│   │   ├── drouot.py
+│   │   ├── interencheres.py
+│   │   ├── ebay.py
+│   │   ├── vestiaire.py
+│   │   └── vinted.py
+│   │
+│   ├── processing/
+│   │   ├── text_similarity.py
+│   │   ├── image_similarity.py
+│   │   ├── item_matching.py
+│   │
+│   ├── pricing/
+│   │   ├── resale_estimator.py
+│   │   └── bid_calculator.py
+│   │
+│   ├── database/
+│   │   ├── models.py
+│   │   ├── db_manager.py
+│   │   └── migrations/
+│   │
+│   ├── services/
+│   │   ├── auction_service.py
+│   │   └── market_service.py
+│   │
+│   ├── dashboard/
+│   │   └── dashboard.py
+│   │
+│   └── main.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│
+├── requirements.txt
+└── README.md
