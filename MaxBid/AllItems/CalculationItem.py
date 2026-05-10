@@ -1,4 +1,4 @@
-def compute_max_bid(PR, site_fee_rate, house_fee_rate, L, margin_rate = 0.2, live_fee_rate = 0.018):
+def compute_max_bid(PR, site_fee_rate, house_fee_rate, L, margin_rate, live_fee_rate):
     """
     Calcule l'enchère maximale E.
     PR : prix de revente espéré (TTC), en euros.
@@ -25,4 +25,4 @@ def compute_max_bid(PR, site_fee_rate, house_fee_rate, L, margin_rate = 0.2, liv
  
 
 
-print("Enchère maximale calculée :", compute_max_bid(300, 0, 0.3, 20))
+print("Enchère maximale calculée :", compute_max_bid(300, 0, 0.3, 20, 0.2, 0.018))
