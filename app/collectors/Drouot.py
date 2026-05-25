@@ -103,18 +103,21 @@ def run_bot():
         # Navigation & Auth
         page.goto("https://drouot.com")
         accept_cookies(page)
-        
+        human_delay(2,4)
         if not os.path.exists(STATE_FILE):
             print("[!] Logging in...")
             page.locator('[data-cy="header-button-profile"]').click()
+            human_delay(4,8)
             page.wait_for_selector("input[type=email]")
             page.type("input[type=email]", EMAIL, delay=random.randint(50, 100))
             page.type("input[type=password]", PASSWORD, delay=random.randint(50, 100))
             page.locator("button[type=submit]").click()
             page.wait_for_timeout(5000)
             context.storage_state(path=STATE_FILE)
+            human_delay(4,8)
 
         # Get Favorites List
+        human_delay(4,8)
         page.goto("https://drouot.com/fr/account/favorites")
         page.wait_for_selector('[data-cy^="lot-cell-Grid"]')
         
@@ -125,7 +128,7 @@ def run_bot():
         print(f"[+] Found {len(urls)} items. Starting extraction...")
 
         # Loop through items with human-like behavior
-        for target_url in urls[:2]:
+        for target_url in urls[:10]:
             try:
                 lot_info = scrape_lot_data(page, target_url)
                 all_results.append(lot_info)
