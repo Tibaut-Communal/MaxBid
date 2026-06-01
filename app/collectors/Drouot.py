@@ -20,6 +20,7 @@ def accept_cookies(page):
                 page.locator(sel).first.click()
                 break
     except: pass
+    
 def scrape_lot_data(page, url):
     print(f"[*] Extracting: {url}")
     
@@ -46,8 +47,29 @@ def scrape_lot_data(page, url):
         const foundEst = spans.find(s => s.innerText.includes('€') && s.innerText.includes('-'));
         if (foundEst) est = foundEst.innerText.trim();
 
-        const fraisEl = document.querySelector('div.text-paragraph-100.font-medium.leading-tight');
-        const frais = fraisEl ? fraisEl.innerText.replace(/\\n/g, ' ').trim() : "N/A";
+        // =====================================================================
+        // OPTIMISATION SÉCURISÉE DES FRAIS DE VENTE (CORRIGÉE)
+        // =====================================================================
+        let frais = "N/A";
+        const headings = Array.from(document.querySelectorAll('h2'));
+        const fraisHeading = headings.find(h => h.innerText && h.innerText.includes('Frais de vente'));
+        
+        if (fraisHeading) {
+            let nextEl = fraisHeading.nextElementSibling;
+            
+            if (nextEl) {
+                const targetFrais = nextEl.querySelector('div.text-paragraph-100.font-medium.leading-tight') || 
+                                    (nextEl.classList.contains('text-paragraph-100') ? nextEl : null);
+                
+                if (targetFrais) {
+                    // Utilisation de replaceAll sans Regex pour éviter les conflits d'échappement Python/JS
+                    frais = targetFrais.innerText.replaceAll('\\n', ' ').trim();
+                } else {
+                    frais = nextEl.innerText.replaceAll('\\n', ' ').trim();
+                }
+            }
+        }
+        // =====================================================================
 
         const descEl = document.querySelector('p.whitespace-pre-line');
         const desc = descEl ? descEl.innerText.trim() : "";
@@ -63,13 +85,11 @@ def scrape_lot_data(page, url):
     }""")
 
     # 2. Dynamic Carousel Loop
-    # We use data['total_images'] instead of a hardcoded 8
     num_to_press = data['total_images']
     print(f"    -> Found {num_to_press} images. Scrolling carousel...")
     
     for _ in range(num_to_press):
         page.keyboard.press("ArrowRight")
-        # Faster delay since we know exactly how many to get
         page.wait_for_timeout(random.randint(400, 700))
 
     # 3. Filter images
@@ -80,7 +100,6 @@ def scrape_lot_data(page, url):
         data['all_images'] = []
     
     return data
-
 def run_bot():
     all_results = []
 
@@ -128,7 +147,7 @@ def run_bot():
         print(f"[+] Found {len(urls)} items. Starting extraction...")
 
         # Loop through items with human-like behavior
-        for target_url in urls[:10]:
+        for target_url in urls[:33]:
             try:
                 lot_info = scrape_lot_data(page, target_url)
                 all_results.append(lot_info)
