@@ -2,6 +2,7 @@ import json
 import os
 import requests
 import traceback
+import time
 from google import genai
 from google.genai import types
 
@@ -186,7 +187,7 @@ for i, lot in enumerate(lots_a_analyser):
         with open(chemin_erreurs_json, "w", encoding="utf-8") as f_err:
             json.dump(erreurs_sauvegardees, f_err, indent=2, ensure_ascii=False)
         # =====================================================================
-        
+    time.sleep(5)
     print("-" * 50)
 
 print(f"\n[+] Script terminé.")

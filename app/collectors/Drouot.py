@@ -106,10 +106,11 @@ def run_bot():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         
-        # Load session if exists
+        # 1. Préparation de la session si elle existe
         context_args = {}
         if os.path.exists(STATE_FILE):
             context_args["storage_state"] = STATE_FILE
+            print("[*] Tentative de chargement de la session enregistrée...")
         
         context = browser.new_context(
             **context_args,
@@ -119,26 +120,56 @@ def run_bot():
         
         page = context.new_page()
         
-        # Navigation & Auth
+        # 2. Navigation initiale
         page.goto("https://drouot.com")
         accept_cookies(page)
-        human_delay(2,4)
-        if not os.path.exists(STATE_FILE):
-            print("[!] Logging in...")
-            page.locator('[data-cy="header-button-profile"]').click()
-            human_delay(4,8)
+        human_delay(2, 4)
+# =====================================================================
+        # DÉTECTION DYNAMIQUE DE L'AUTHENTIFICATION (CORRIGÉE STRICTE)
+        # =====================================================================
+        is_logged_in = False
+        try:
+            print("[*] Vérification de l'état de la session...")
+            page.goto("https://drouot.com/fr/account/favorites", wait_until="networkidle")
+            
+            # Si l'URL contient "login", Drouot nous a redirigé car les cookies ont expiré
+            if "/login" in page.url:
+                is_logged_in = False
+                print("[!] Redirection vers la page de login détectée. La session a expiré.")
+            elif "account/favorites" in page.url:
+                is_logged_in = True
+                print("[+] Session valide ! Accès direct aux favoris.")
+        except Exception as e:
+            print(f"[!] Erreur lors de la vérification de session : {e}")
+            is_logged_in = False
+
+        # Si nous ne sommes pas connectés (redirection ou session absente)
+        if not is_logged_in:
+            print("[!] Connexion requise. Lancement de la procédure d'authentification...")
+            
+            # Si on a été redirigé, les champs de login sont déjà là. 
+            # Sinon, on force l'accès à la page de connexion.
+            if "/login" not in page.url:
+                page.goto("https://drouot.com/fr/login")
+                human_delay(2, 3)
+            
+            # Attente et saisie des identifiants (Email + Password)
             page.wait_for_selector("input[type=email]")
             page.type("input[type=email]", EMAIL, delay=random.randint(50, 100))
             page.type("input[type=password]", PASSWORD, delay=random.randint(50, 100))
+            
+            # Clic sur le bouton de soumission
             page.locator("button[type=submit]").click()
-            page.wait_for_timeout(5000)
+            
+            # # Attente que la connexion se finalise et redirige vers les favoris
+            # page.wait_for_url("**/account/favorites", timeout=10000)
+            
+            # Sauvegarde du nouvel état de session valide
             context.storage_state(path=STATE_FILE)
-            human_delay(4,8)
-
-        # Get Favorites List
-        human_delay(4,8)
-        page.goto("https://drouot.com/fr/account/favorites")
-        page.wait_for_selector('[data-cy^="lot-cell-Grid"]')
+            print("[+] Connexion réussie et nouvelle session enregistrée.")
+            human_delay(3, 5)
+        # =====================================================================
+        
         
         # Collect all lot URLs
         links = page.locator('[data-cy^="lot-cell-Grid"] a[href*="/l/"]')
@@ -147,7 +178,7 @@ def run_bot():
         print(f"[+] Found {len(urls)} items. Starting extraction...")
 
         # Loop through items with human-like behavior
-        for target_url in urls[:33]:
+        for target_url in urls[:17]:
             try:
                 lot_info = scrape_lot_data(page, target_url)
                 all_results.append(lot_info)

@@ -1,0 +1,276 @@
+[
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré en soie",
+      "ref": null,
+      "full_name": "HERMES Carré en soie 'Selles à housse'",
+      "period": null
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "Bon état général, à vérifier pour d'éventuelles micro-taches, fils tirés ou décolorations non spécifiées par la description sommaire."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 200,
+      "resale_high_estimate_market_eur": 300,
+      "recommended_bid_max": 120,
+      "resale_liquidity_score": 4,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer l'authenticité du foulard (présence du copyright Hermès, signature, roulotté à la main).",
+        "Demander un rapport d'état détaillé avec photos haute résolution des quatre coins, du centre et de l'étiquette de composition pour identifier d'éventuels fils tirés, taches, décolorations ou trous.",
+        "Vérifier les dimensions exactes du carré (standard 90x90cm ou autre format)."
+      ],
+      "red_flags": [
+        "La description 'Bon état' est subjective et manque de détails précis sur l'usure, ce qui pourrait masquer des défauts mineurs mais impactant la valeur.",
+        "Absence de mention de l'étiquette de composition, qui est un indicateur d'authenticité et d'état."
+      ]
+    },
+    "source_title": "HERMES. Carré en soie bordeaux, blanc et kak... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré en soie",
+      "ref": "N/A",
+      "full_name": "HERMES. Carré en soie bordeaux et or «Dies et Hore»",
+      "period": "N/A"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "La description 'Bon état' est subjective. Il est crucial de vérifier l'absence de taches, fils tirés, décoloration, ou odeurs (tabac, humidité, etc.) qui pourraient déprécier significativement la valeur."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 180,
+      "resale_high_estimate_market_eur": 300,
+      "recommended_bid_max": 120,
+      "resale_liquidity_score": 4,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer l'authenticité du carré (roulotté à la main, étiquette de composition).",
+        "Vérifier les dimensions exactes du carré (standard 90x90cm ou autre).",
+        "Demander des photos haute résolution de tous les coins, des bords roulottés et du centre pour identifier les défauts non mentionnés.",
+        "Confirmer l'absence d'odeurs résiduelles (tabac, humidité, parfum)."
+      ],
+      "red_flags": [
+        "La description 'Bon état' est vague et peut masquer des défauts mineurs mais impactants pour la revente (petits fils tirés, micro-taches).",
+        "L'absence de mention de l'étiquette de composition ou de la boîte d'origine peut légèrement affecter la valeur perçue et la facilité de revente.",
+        "Frais de vente non spécifiés : il faut anticiper des frais d'environ 30% sur le prix marteau pour calculer le coût d'acquisition réel."
+      ]
+    },
+    "source_title": "HERMES. Carré en soie bordeaux et or «Dies e... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré en soie",
+      "ref": "N/A",
+      "full_name": "HERMES Carré en soie \"Sheherazade\" framboise/blanc, bleu/vert",
+      "period": "N/A"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "Bon état général. Couleurs vives (framboise/blanc, bleu/vert). Motif 'Sheherazade'. Des vérifications détaillées sont nécessaires pour les éventuels fils tirés, taches ou décolorations mineures non spécifiées par 'bon état'."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 250,
+      "resale_high_estimate_market_eur": 400,
+      "recommended_bid_max": 200,
+      "resale_liquidity_score": 5,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer l'authenticité du carré (signature, roulotté à la main, étiquette de composition).",
+        "Demander des photos haute résolution de tous les bords et de la surface pour identifier d'éventuels fils tirés, taches, décolorations ou marques d'usure non mentionnées.",
+        "Vérifier les dimensions exactes du carré (généralement 90x90cm pour un carré classique).",
+        "S'assurer de l'absence d'odeurs (humidité, tabac, parfum)."
+      ],
+      "red_flags": [
+        "La description 'Bon état' est subjective et manque de détails précis sur l'état réel (ex: fils tirés, micro-taches, décoloration minime).",
+        "L'absence de frais de vente spécifiés implique l'application d'une prime acheteur standard (souvent 25-30%), ce qui doit être intégré dans le calcul du prix d'achat final."
+      ]
+    },
+    "source_title": "HERMES. Carré en soie framboise/blanc, bleu/... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré \"Bride de Gala\"",
+      "ref": "Non spécifié (design classique)",
+      "full_name": "HERMES Carré en soie \"Bride de Gala\" (rouge foncé, blanc, gris et beige)",
+      "period": "Non spécifié, design classique intemporel"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "L'indication \"Bon état\" suggère des signes d'usure légers à modérés, typiques d'une utilisation normale, mais sans défauts majeurs (taches importantes, fils tirés, décoloration significative ou trous). Le roulotté peut présenter une légère usure."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 250,
+      "resale_high_estimate_market_eur": 380,
+      "recommended_bid_max": 180,
+      "resale_liquidity_score": 90,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Quelle est la taille exacte du carré (ex: 90x90cm, 70x70cm) ? La taille impacte directement la valeur.",
+        "Des photos haute résolution des quatre coins, du roulotté et de l'étiquette de composition sont-elles disponibles pour évaluer précisément l'état et l'authenticité ?",
+        "Y a-t-il des taches, des fils tirés, des décolorations ou des marques d'usure spécifiques non mentionnées dans la description ?",
+        "Le roulotté est-il intact et fait-il à la main, signe d'authenticité Hermès ?"
+      ],
+      "red_flags": [
+        "La description \"Bon état\" est vague et ne détaille pas les éventuels défauts mineurs, ce qui est courant pour les articles d'occasion.",
+        "L'absence de mention de la taille du carré peut indiquer un format moins recherché ou standard.",
+        "L'absence de photos détaillées des zones critiques (coins, roulotté) empêche une évaluation visuelle complète de l'état."
+      ]
+    },
+    "source_title": "HERMES. Carré en soie rouge foncé, blanc, gr... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré en soie",
+      "ref": "N/A",
+      "full_name": "HERMES Carré en soie «Les voitures à transformation»",
+      "period": "N/A"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "Bon état général. Nécessite une vérification des détails (bords roulottés, éventuelles micro-taches, fils tirés)."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 180,
+      "resale_high_estimate_market_eur": 250,
+      "recommended_bid_max": 130,
+      "resale_liquidity_score": 8,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer les dimensions exactes du carré (généralement 90x90cm).",
+        "Vérifier la présence et l'état de l'étiquette de composition et de la signature Hermès.",
+        "Demander des photos haute résolution des quatre bords roulottés pour évaluer leur intégrité.",
+        "Confirmer l'absence de taches, de fils tirés, d'accrocs ou d'odeurs (tabac, humidité, parfum)."
+      ],
+      "red_flags": [
+        "Frais de vente non spécifiés ('N/A') : risque de frais élevés (assumer 30% pour le calcul de rentabilité).",
+        "Description 'Bon état' sans détails précis : peut masquer des défauts mineurs impactant la valeur.",
+        "Absence de photos détaillées des zones critiques (bords, signature, étiquette)."
+      ]
+    },
+    "source_title": "HERMES. Caré en soie gris, écru et rouge fon... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré en soie «Dies et Hore»",
+      "ref": "Non spécifié",
+      "full_name": "HERMES. Carré en soie «Dies et Hore» noir, or et blanc",
+      "period": "Vintage (design original 1963)"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "Bon état général, conforme à la description. Des signes d'usure mineurs (petits fils tirés, légères marques) sont à anticiper pour un article vintage en 'bon état'."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 250,
+      "resale_high_estimate_market_eur": 450,
+      "recommended_bid_max": 180,
+      "resale_liquidity_score": 4,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer les dimensions exactes du carré (ex: 90x90cm) pour évaluer précisément sa valeur.",
+        "Vérifier la présence de l'étiquette de composition et s'assurer que le roulotté est fait à la main, signes d'authenticité et de qualité Hermès.",
+        "Demander des photos détaillées des bords et de la surface pour confirmer l'absence de taches importantes, fils tirés majeurs ou trous."
+      ],
+      "red_flags": [
+        "Absence de l'étiquette de composition ou roulotté machine (pourrait indiquer une contrefaçon ou une altération majeure).",
+        "Taches importantes, décoloration significative ou fils tirés non mentionnés dans la description, qui dévaloriseraient l'article.",
+        "Odeurs persistantes (humidité, tabac, parfum) qui peuvent être difficiles à éliminer et affecter la valeur de revente."
+      ]
+    },
+    "source_title": "HERMES. Carré en soie «Dies et Hore» noir, o... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "HERMES",
+      "model": "Carré \"Etriers\"",
+      "ref": "N/A",
+      "full_name": "HERMES Carré en soie «Etriers» vert, blanc et or",
+      "period": "Vintage (design classique)"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "Bon état général. Peut présenter de légères marques d'usage, plis ou petites imperfections conformes à l'âge et à l'utilisation. Une inspection visuelle détaillée est recommandée pour confirmer l'absence de taches, fils tirés ou trous."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 200,
+      "resale_high_estimate_market_eur": 300,
+      "recommended_bid_max": 150,
+      "resale_liquidity_score": 4,
+      "liquidity_trend": "Stable"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer l'authenticité du carré (roulotté à la main, signature, étiquette de composition si présente).",
+        "Demander des photos haute résolution de chaque coin et du centre pour vérifier l'état exact (taches, fils tirés, décoloration).",
+        "Vérifier les dimensions exactes du carré (90x90 cm est la taille standard, mais des variations existent)."
+      ],
+      "red_flags": [
+        "Absence de photos détaillées de l'état réel.",
+        "Description trop vague de l'état pour un article de cette valeur.",
+        "Prix de départ ou estimation trop bas par rapport au marché, pouvant indiquer un problème d'authenticité ou d'état non divulgué."
+      ]
+    },
+    "source_title": "HERMES. Carré en soie «Etriers» vert, blanc ... | Accessoires: enchères",
+    "source_url": "N/A"
+  },
+  {
+    "item": {
+      "brand": "FRED",
+      "model": "Force 10",
+      "ref": "N/A (requires physical inspection for specific number)",
+      "full_name": "FRED Bracelet Force 10, câble torsadé en acier avec fermoir en or gris 18K",
+      "period": "Contemporain"
+    },
+    "condition": {
+      "visual_grade": "B",
+      "notes": "Le bracelet est décrit comme étant conservé dans son écrin, ce qui suggère un entretien soigné. L'état général du câble torsadé et du fermoir en or gris doit être vérifié pour des signes d'usure, rayures ou déformations, mais la description ne mentionne pas de défauts majeurs."
+    },
+    "market": {
+      "resale_low_estimate_market_eur": 1800,
+      "resale_high_estimate_market_eur": 2500,
+      "recommended_bid_max": 1350,
+      "resale_liquidity_score": 5,
+      "liquidity_trend": "Stable/Bullish"
+    },
+    "due_diligence": {
+      "critical_questions": [
+        "Confirmer l'authenticité du bracelet (signature, numéro de série, poinçons de l'or).",
+        "Vérifier l'état exact du câble en acier (absence de déformation, effilochage, ou usure excessive).",
+        "Examiner le fermoir en or gris pour des rayures profondes, chocs ou un fonctionnement défectueux.",
+        "Confirmer la présence et l'état de l'écrin d'origine et si des papiers/certificats sont inclus (non mentionné explicitement).",
+        "Vérifier la longueur exacte du bracelet (17,5cm est une taille courante, mais la précision est importante)."
+      ],
+      "red_flags": [
+        "Aucun drapeau rouge évident dans la description textuelle. Cependant, l'absence de mention de papiers d'origine est une lacune courante qui nécessite une vérification approfondie de l'authenticité."
+      ]
+    },
+    "source_title": "FREDBracelet Force 10 composé d’un cable tors... | Bracelets: enchères",
+    "source_url": "N/A"
+  }
+]
